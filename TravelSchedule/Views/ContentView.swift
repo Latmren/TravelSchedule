@@ -1,0 +1,35 @@
+//
+//  ContentView.swift
+//  TravelSchedule
+//
+//  Created by Dmitry Zherebyatnikov on 18.11.2026.
+//
+
+import SwiftUI
+
+struct ContentView: View {
+    var body: some View {
+        VStack {
+            Image(systemName: "globe")
+                .imageScale(.large)
+                .foregroundStyle(.tint)
+            Text("Hello, world!")
+        }
+        .padding()
+        .onAppear {
+            // Для ревьюера: для проверки работы сервисов нужно раскомментировать нужный метод
+            //testFetchStations()
+            //testFetchCopyright()
+            //testFetchNearestSettlement()
+            //testFetchCarrier()
+            //testFetchSchedule()
+            //testSearchService()
+            //testFetchThreadService()
+            testStationsList()
+        }
+    }
+}
+
+#Preview {
+    ContentView()
+}
